@@ -1,0 +1,15 @@
+</div><!-- ./l-main -->
+
+<%- include('../components/footer') %>
+
+</div><!-- ./l-wrap -->
+
+<script src="<%- config.jsPath %>vendors.bundle.js"></script>
+<script src="<%- config.jsPath %>modules.bundle.js"></script>
+<%_ if (Array.isArray(page.scripts)) { _%>
+<%_ page.scripts.forEach((script) => { _%>
+<script src="<%- script %>"></script>
+<%_ }) _%>
+<%_ } _%>
+</body>
+</html>

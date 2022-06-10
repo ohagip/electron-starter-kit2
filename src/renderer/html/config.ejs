@@ -1,0 +1,21 @@
+<%_
+config = CONFIG
+config.imagesPath = `${config.basePath}assets/images/`
+config.cssPath = `${config.basePath}assets/css/`
+config.jsPath = `${config.basePath}assets/js/`
+
+// 全ページ共通
+site = {}
+site.title = 'title'
+site.description = 'description'
+site.keywords = 'keywords'
+
+site.ogpUrl = config.siteUrl
+site.ogpTitle = 'title'
+site.ogpDescription = 'description'
+site.ogpImage = `${config.siteUrl}${config.basePath}assets/images/common/ogp.png`
+site.ogpSiteName = 'sate name'
+site.ogpType = 'article' // website
+site.ogpLocale = 'ja_JP'
+site.ogpAppID = ''
+_%>

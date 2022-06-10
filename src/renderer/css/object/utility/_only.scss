@@ -1,0 +1,47 @@
+/**
+ * Only
+ * 
+ * <div class="u-pc">PCのみ表示</div>
+ * <div class="u-tab">TABLETのみ表示</div>
+ * <div class="u-tab-gt">TABLET以上を表示</div>
+ * <div class="u-tab-lt">TABLET以下を表示</div>
+ * <div class="u-sp">SPのみ表示</div>
+ */
+
+@include mq-pc {
+  .u-sp {
+    display: none !important;
+  }
+
+  .u-tab {
+    display: none !important;
+  }
+
+  .u-tab-lt {
+    display: none !important;
+  }
+}
+
+@include mq-tab {
+  .u-sp {
+    display: none !important;
+  }
+
+  .u-pc {
+    display: none !important;
+  }
+}
+
+@include mq-sp {
+  .u-tab {
+    display: none !important;
+  }
+
+  .u-tab-gt {
+    display: none !important;
+  }
+
+  .u-pc {
+    display: none !important;
+  }
+}

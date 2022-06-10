@@ -1,0 +1,11 @@
+package.json
+package-lock.json
+*.md
+dist
+out
+node_modules
+public
+static
+*.ejs
+src/renderer/src/css/libs/
+src/renderer/src/css/foundation/_destyle.scss

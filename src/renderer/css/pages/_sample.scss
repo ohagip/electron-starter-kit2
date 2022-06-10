@@ -1,0 +1,34 @@
+/**
+ * Sample page
+ */
+
+.page-sample {
+  $imgPath: $IMG_PATH + 'sample/';
+
+  // --------------------
+  // Sample
+  // --------------------
+  .sample {
+    @include mq-pc {
+      content: 'pc';
+    }
+    @include mq-tab {
+      content: 'tab';
+    }
+    @include mq-sp {
+      content: 'sp';
+    }
+  }
+
+  .sample-tab-gt {
+    @include mq-tab-gt {
+      content: 'tab-gt';
+    }
+  }
+
+  .sample-tab-lt {
+    @include mq-tab-lt {
+      content: 'tab-lt';
+    }
+  }
+}

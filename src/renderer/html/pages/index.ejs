@@ -1,0 +1,29 @@
+<%- include('../config') _%>
+<%
+// ページ個別設定
+page = {}
+page.id = 'index'
+
+page.title = ''
+page.description = ''
+page.keywords = ''
+
+page.ogpUrl = ''
+page.ogpTitle = ''
+page.ogpDescription = ''
+page.ogpImage = ''
+page.ogpSiteName = ''
+page.ogpType = ''
+page.ogpLocale = ''
+page.ogpAppID = ''
+
+page.bodyClass = []
+page.styles = []
+page.scripts = [(config.jsPath + page.id + '.js')]
+page.imagesPath =  config.imagesPath + page.id + '/'
+_%>
+<%- include('../templates/head') %>
+
+<p style="text-align: center">index</p>
+
+<%- include('../templates/foot') %>
