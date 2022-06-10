@@ -8,7 +8,7 @@
     "clean": "rimraf out",
     "dev": "run-p dev:*",
     "dev:renderer": "webpack serve --config src/renderer/webpack/dev.js",
-    "dev:electron": "npm run build:main && wait-on http://localhost:8000 && electron .",
+    "dev:electron": "npm run build:main && wait-on http://localhost:8080 && electron .",
     "build": "run-s build:*",
     "build:main": "tsc -p src/main",
     "build:renderer": "webpack --config src/renderer/webpack/prod.js --node-env production",
