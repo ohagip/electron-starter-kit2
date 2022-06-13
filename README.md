@@ -12,54 +12,21 @@ npm: 8.11.0
 npm ci
 ```
 
-## Scripts
-- `start` devと同じ
-- `dev` 開発スタート（ローカルサーバ起動、ファイル監視）
-- `build:dev` ビルド（開発）
-- `build:stg` ビルド（ステージング）
-- `build:prd` ビルド（本番）
-
-## Directory
+## Development
 ```
-├ env [環境設定]
-├ public [公開ソース]
-├ src [開発ソース]
-│ ├ css
-│ │ ├ pages/**/* [各ページファイル]
-│ │ └ app.scss [エントリーポイント]
-│ ├ html
-│ │ └ pages/**/* [エントリーポイント]
-│ └ js
-│ │ └ pages/* [エントリーポイント]
-│ └ static [静的ファイル]
-└ webpack
-    ├ common.js
-    ├ dev.js
-    └ prod.js
+$ npm install
+$ npm start
 ```
 
-## Git
-- `main|master` 本番
-- `develop` 開発
-- `feature/**` 機能開発 or 開発者（直接developもOK）
-
-## Linter & Formatter
-エディタの設定でファイル保存時に実行してください。
-
-## JavaScript
-TypeScriptも利用可能です。
-
-## Style design
-[FLOCSS](https://github.com/hiloki/flocss) をベースに設計しています。  
-Block、Element、Modifierはそれぞれ`_`、`-`で接続します。
+## Create Production app
 ```
-Block_Element
-Block_Element-Modifier
+$ npm run dist
+$ npm run dist:win（MacでWindows用ビルドする場合）
 ```
-独自ルールとして各ページでのみ設定するスタイルについては  
-プレフィックスをつけず各ページclassのセレクタを利用します。
+
+## MacでWindows用ビルドする場合
+- `wine` をインストールする必要がある
+- [`Homebrew`](https://brew.sh/index_ja) でインストールするのが楽
 ```
-.page-{{pageId}} {
-  .sample {}
-}
+brew install --cask wine-stable
 ```
