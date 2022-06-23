@@ -14,9 +14,10 @@ npm ci
 
 ## Development
 ```
-$ npm install
-$ npm start
+$ npm dev:renderer
+$ npm dev:main
 ```
+renderer側でローカルサーバが立ち上がってからmain側を実行する
 
 ## Create Production app
 ```

@@ -7,7 +7,7 @@ module.exports = merge(commonConfiguration, {
   devtool: 'source-map',
   devServer: {
     host: '0.0.0.0',
-    port: 8080,
+    port: 3000,
     // host: 'local-ip',
     // open: true,
     // liveReloadを有効にするときはHMRを無効する

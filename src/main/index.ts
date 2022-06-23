@@ -43,8 +43,8 @@ import { adjustRenderer } from './libs/adjustRenderer'
     },
   })
 
-  // const url = isDev ? `http://localhost:8080/` : `file://${join(__dirname, '../renderer/index.html')}`
-  const url = isDev ? `http://localhost:8080/` : isWindows ? 'file:///C:/index.html' : 'file:///index.html'
+  // const url = isDev ? `http://localhost:3000/` : `file://${join(__dirname, '../renderer/index.html')}`
+  const url = isDev ? `http://localhost:3000/` : isWindows ? 'file:///C:/index.html' : 'file:///index.html'
   try {
     await mainWindow.loadURL(url)
   } catch (e) {
